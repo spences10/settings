@@ -123,3 +123,12 @@ There's a pretty nice workbench theme too [vscode-snazzy](https://github.com/Tyr
 
 ## Extensions:
 
+auto-close-tag
+auto-rename-tag
+code-stats-vscode
+markdown-toc
+new-moon-vscode
+node-module-intellisense
+path-intellisense
+
+

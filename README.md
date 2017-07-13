@@ -12,4 +12,4 @@ So far I have listed ou the following:
 
 [npm](npm.md)
 
-
+I use [Monoid](https://github.com/larsenwork/monoid) for terminal and editor :+1:

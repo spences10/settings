@@ -70,5 +70,56 @@ There's a pretty nice workbench theme too [vscode-snazzy](https://github.com/Tyr
 
 ## Snippets
 
+### JavaScript
+
+```json
+  "Console Log": {
+    "prefix": "clg",
+    "body": [
+      "console.log($1)"
+    ],
+    "description": "console.log"
+  },
+  "Console Log With Lines": {
+    "prefix": "clgg",
+    "body": [
+      "console.log('====================')",
+      "console.log($1)",
+      "console.log('====================')"
+    ],
+    "description": "console.log with lines"
+  },
+  "Module Exports": {
+    "prefix": "mod",
+    "body": [
+      "module.exports = {",
+      "  $1",
+      "}"
+    ],
+    "description": "Module exports snippet"
+  }
+```
+
+### TypeScript
+
+```json
+  "Console Log": {
+    "prefix": "clg",
+    "body": [
+      "console.log($1)"
+    ],
+    "description": "console.log"
+  },
+  "Console Log With Lines": {
+    "prefix": "clgg",
+    "body": [
+      "console.log('====================')",
+      "console.log($1)",
+      "console.log('====================')"
+    ],
+    "description": "console.log with lines"
+  }
+```
+
 ## Extensions:
 

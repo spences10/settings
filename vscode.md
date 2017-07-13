@@ -130,5 +130,13 @@ markdown-toc
 new-moon-vscode
 node-module-intellisense
 path-intellisense
-
+prettier-now
+search-node-modules
+search-node-modules
+theme-cobalt2
+tslint
+vscode-eslint
+vscode-npm-script
+vscode-wakatime
+write-good-linter
 

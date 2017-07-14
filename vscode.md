@@ -18,6 +18,7 @@ For the editor I like to use the Monoid font which is a bit larger than the defa
   "editor.detectIndentation": false,
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": true,
+  "editor.fontLigatures": true,
 ```
 
 ### Terminal:

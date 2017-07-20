@@ -12,4 +12,6 @@ So far I have listed ou the following:
 
 [npm](npm.md)
 
+[Chrome](chrome.md)
+
 I use [Monoid](https://github.com/larsenwork/monoid) for terminal and editor 👍

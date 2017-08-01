@@ -18,4 +18,6 @@ Use the `npm list -g --depth=0` terminal command to see your global npm packages
   rimraf
   snyk
   tslint
+  typescript
+  windows-build-tools
 ```

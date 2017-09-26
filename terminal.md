@@ -12,3 +12,11 @@ https://github.com/AmrEldib/cmder-powerline-prompt
 
 Check the Cmder [settings](cmdersettings.xml) XML file
 
+## Hyper
+
+I used this guide to customise **Hyper** with a **bash** shell:
+
+https://evdokimovm.github.io/windows/zsh/shell/syntax/highlighting/ohmyzsh/hyper/terminal/2017/02/24/how-to-install-zsh-and-oh-my-zsh-on-windows-10.html
+
+The guide covers setting up Windows Subsystem for Linux
+

@@ -91,22 +91,3 @@ function rm --description 'alias rm=trash'
 end
 ```
 
-## pbcopy on Ubuntu/Linux
-
-Taken from here: https://coderwall.com/p/oaaqwq/pbcopy-on-ubuntu-linux
-
-```shell
-brew install xclip
-```
-
-add an alias
-
-```shell
-alias pbcopy="xclip -sel clip"
-```
-
-Then you can alias that and copy your key straight to the clipboard
-
-```shell
-alias cpkey="pbcopy < ~/.ssh/id_rsa.pub"
-```

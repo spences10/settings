@@ -4,6 +4,8 @@ There are a few combinations and setting for this so I'm going to go over what I
 
 ## zsh
 
+### oh-my-zsh
+
 For zsh config I have the following:
 
 ```shell
@@ -26,6 +28,8 @@ ZSH_THEME="agnoster"
 ```
 
 ## fish
+
+### oh-my-fish
 
 Fish shell is different as you have functions instead of config values like with zsh
 

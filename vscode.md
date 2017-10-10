@@ -4,12 +4,13 @@ Here I'll cover my opinionated settings and extensions
 
 ## Settings:
 
-For the editor I like to use the Monoid font which is a bit larger than the default font set with VSCode 
+For the editor I like to use the Monoid font which is a bit larger than the default font set with VSCode
 
 ### Editor:
 
 ```json
-  "editor.fontFamily": "Monoid, 'Anonymice Powerline', Consolas, 'Courier New', monospace",
+  "editor.fontFamily":
+    "Monoid, 'Anonymice Powerline', Consolas, 'Courier New', monospace",
   "editor.fontSize": 12,
   "window.zoomLevel": 0,
   "editor.renderIndentGuides": true,
@@ -17,16 +18,13 @@ For the editor I like to use the Monoid font which is a bit larger than the defa
   "editor.wordWrap": "on",
   "editor.detectIndentation": false,
   "editor.snippetSuggestions": "top",
-  "editor.minimap.enabled": true,
   "editor.fontLigatures": true,
 ```
 
 ### Terminal:
 
 ```json
-  "terminal.integrated.fontLigatures": true,
   "terminal.integrated.fontSize": 12,
-  "terminal.integrated.enableBold": false,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
 ```
@@ -36,7 +34,7 @@ There's a pretty nice workbench theme too [vscode-snazzy](https://github.com/Tyr
 ```json
   "workbench.colorCustomizations": {
     // The background is optional
-    "terminal.background": "#282a36", 
+    "terminal.background": "#282a36",
     "terminal.foreground": "#eff0eb",
     "terminal.ansiBlack": "#282a36",
     "terminal.ansiRed": "#ff5c57",
@@ -65,8 +63,17 @@ There's a pretty nice workbench theme too [vscode-snazzy](https://github.com/Tyr
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
   "prettier.jsxSingleQuote": true,
-  "prettier.flattenTernaries": true,
   "editor.formatOnSave": true,
+```
+
+### Markdown:
+
+Include preferred font in Markdown preview:
+
+```json
+  "markdown.preview.fontFamily":
+    "Monoid, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif",
+  "markdown.preview.fontSize": 12,
 ```
 
 ## Snippets
@@ -74,11 +81,10 @@ There's a pretty nice workbench theme too [vscode-snazzy](https://github.com/Tyr
 ### JavaScript
 
 ```json
+{
   "Console Log": {
     "prefix": "clg",
-    "body": [
-      "console.log($1)"
-    ],
+    "body": ["console.log($1)"],
     "description": "console.log"
   },
   "Console Log With Lines": {
@@ -92,13 +98,65 @@ There's a pretty nice workbench theme too [vscode-snazzy](https://github.com/Tyr
   },
   "Module Exports": {
     "prefix": "mod",
-    "body": [
-      "module.exports = {",
-      "  $1",
-      "}"
-    ],
+    "body": ["module.exports = {", "  $1", "}"],
     "description": "Module exports snippet"
+  },
+  "Import React": {
+    "prefix": "imr",
+    "body": "import React from 'react'",
+    "description": "Import React from 'react'"
+  },
+  "Create React Class": {
+    "prefix": "crc",
+    "body": [
+      "class $1 extends React.Component {",
+      "  constructor() {",
+      "    super()",
+      "  }",
+      "  render() {",
+      "    return (",
+      "      <div>",
+      "        $2",
+      "      </div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "Create React Class"
+  },
+  "Import module": {
+    "prefix": "imm",
+    "body": "import $1 from '$1",
+    "description": "Import thing from module"
+  },
+  "Require package": {
+    "prefix": "rqp",
+    "body": "const $1 = require('$1')",
+    "description": "Require thing from module"
+  },
+  "require('')": {
+    "prefix": "req",
+    "body": "require('$1')",
+    "description": "Require('') add the parenthesis"
+  },
+  "Arrow function": {
+    "prefix": "af",
+    "body": "($1) => {$2}",
+    "description": "Arrow function fat arrow"
+  },
+  "Arrow req, res": {
+    "prefix": "afrr",
+    "body": "(req, res) => {$1}",
+    "description": "Arrow req, res"
+  },
+  "if (err) throw err": {
+    "prefix": "iferr",
+    "body": "if (err) throw err",
+    "description": "if (err) throw err"
   }
+}
 ```
 
 ### TypeScript

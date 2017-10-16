@@ -1,8 +1,26 @@
 # Shells
 
-There are a few combinations and setting for this so I'm going to go over what I did to get thisngs working for me.
+There are a few combinations and setting for this so I'm going to go over what I did to get things working for me.
 
 ## zsh
+
+### `.zshrc`
+
+```shell
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory autocd beep extendedglob nomatch notify
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/scott/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+```
 
 ### oh-my-zsh
 

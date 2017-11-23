@@ -146,6 +146,11 @@ Include preferred font in Markdown preview:
     "body": "($1) => {$2}",
     "description": "Arrow function fat arrow"
   },
+  "Fat arrow": {
+    "prefix": "fa",
+    "body": " => {$1}",
+    "description": "Fat arrow with object => {}"
+  },
   "Arrow req, res": {
     "prefix": "afrr",
     "body": "(req, res) => {$1}",
@@ -157,6 +162,7 @@ Include preferred font in Markdown preview:
     "description": "if (err) throw err"
   }
 }
+
 ```
 
 ### TypeScript

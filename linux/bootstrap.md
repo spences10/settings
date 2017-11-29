@@ -15,7 +15,20 @@ omf install clearance
 
 ## GitHub SSH
 
-Do this from BASH there are some commands that do not work in fish
+Do this from BASH, there are some commands that do not work in fish
 
 [how-to-authenticate-with-github-using-ssh](https://github.com/spences10/cheat-sheets/blob/master/git.md#how-to-authenticate-with-github-using-ssh)
+
+## Install node
+
+Again, do this from BASH as there are some commands that do not work in fish
+
+Handy Gist here: https://gist.github.com/micahgodbolt/8b9a338c8bab7bc147975646ea20826c
+
+basically:
+
+```bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+```
+
 

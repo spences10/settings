@@ -29,6 +29,17 @@ basically:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+nvm install node
+node -v
+npm -v
 ```
+
+## Move dotfiles
+
+```bash
+cp /mnt/c/Users/spenc/bashDotfiles/.gitconfig ~/
+chmod 0644 .gitconfig
+```
+
 
 

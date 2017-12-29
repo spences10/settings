@@ -1,6 +1,6 @@
 # Set up a clean install WSL
 
-first things first: `sudo apt update` then `sudo apt upgrade`
+first things first: `sudo apt update` then `sudo apt -y upgrade`
 
 ```bash
 sudo apt install fish

@@ -13,6 +13,14 @@ curl -L https://get.oh-my.fish | fish
 omf install clearance 
 ```
 
+## Build Tools
+
+To compile and install native addons from npm you may also need to install build tools:
+
+```bash
+sudo apt-get install -y build-essential
+```
+
 ## GitHub SSH
 
 Do this from BASH, there are some commands that do not work in fish

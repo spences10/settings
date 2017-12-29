@@ -28,7 +28,7 @@ Handy Gist here: https://gist.github.com/micahgodbolt/8b9a338c8bab7bc147975646ea
 basically:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 nvm install node
 node -v
 npm -v

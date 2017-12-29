@@ -53,5 +53,9 @@ cp /mnt/c/Users/spenc/bashDotfiles/.gitconfig ~/
 chmod 0644 .gitconfig
 ```
 
+## WSL on VSCode
 
+Running nodejs on wsl from visual studio code
+
+https://blogs.msdn.microsoft.com/commandline/2017/10/27/running-node-js-on-wsl-from-visual-studio-code/
 

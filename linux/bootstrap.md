@@ -2,6 +2,16 @@
 
 first things first: `sudo apt update` then `sudo apt -y upgrade`
 
+## Build Tools
+
+To compile and install native addons from npm you may also need to install build tools:
+
+```bash
+sudo apt-get install -y build-essential
+```
+
+## Install fish :fish:
+
 ```bash
 sudo apt install fish
 sudo apt -y install fish
@@ -13,14 +23,6 @@ curl -L https://get.oh-my.fish | fish
 
 ```bash
 omf install clearance 
-```
-
-## Build Tools
-
-To compile and install native addons from npm you may also need to install build tools:
-
-```bash
-sudo apt-get install -y build-essential
 ```
 
 ## GitHub SSH

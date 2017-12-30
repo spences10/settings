@@ -39,11 +39,17 @@ sudo apt-get install -y build-essential
 
 ```bash
 sudo apt -y install fish
-sudo apt upgrade
+sudo apt -y upgrade
+sudo apt -y autoremove
+```
+
+## Install Oh My Fish | OMF
+
+```bash
 curl -L https://get.oh-my.fish | fish
 ```
 
-## install theme
+### Install OMF theme
 
 ```bash
 omf install clearance 

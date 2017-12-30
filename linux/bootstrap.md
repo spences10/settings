@@ -38,7 +38,6 @@ sudo apt-get install -y build-essential
 ## Install fish :fish:
 
 ```bash
-sudo apt install fish
 sudo apt -y install fish
 sudo apt upgrade
 curl -L https://get.oh-my.fish | fish

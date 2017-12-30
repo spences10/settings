@@ -2,14 +2,6 @@
 
 first things first: `sudo apt update` then `sudo apt -y upgrade`
 
-## Build Tools
-
-To compile and install native addons from npm you may also need to install build tools:
-
-```bash
-sudo apt-get install -y build-essential
-```
-
 ## Install node
 
 Installing node via the instructions given on the nodejs.org site doesn't give the correct permissions:
@@ -34,6 +26,14 @@ If you find the startup time of [bash taking too long] then take a look at [usin
 
 [bash taking too long]: https://github.com/Microsoft/WSL/issues/776
 [using n]: https://github.com/Microsoft/WSL/issues/776#issuecomment-266112578
+
+## Build Tools
+
+To compile and install native addons from npm you may also need to install build tools:
+
+```bash
+sudo apt-get install -y build-essential
+```
 
 ## Install fish :fish:
 

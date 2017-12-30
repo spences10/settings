@@ -63,9 +63,17 @@ Do this from BASH, there are some commands that do not work in fish
 
 ## Move dotfiles
 
+You can move and set the permissions on each individual file with:
+
 ```bash
 cp /mnt/c/Users/spenc/bashDotfiles/.gitconfig ~/
 chmod 0644 .gitconfig
+```
+
+Or use `rsync` to copy them all 
+
+```bash
+sudo rsync -a /mnt/c/Users/spenc/bashDotfiles/ ~/
 ```
 
 ## WSL on VSCode

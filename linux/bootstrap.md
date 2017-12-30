@@ -70,10 +70,12 @@ cp /mnt/c/Users/spenc/bashDotfiles/.gitconfig ~/
 chmod 0644 .gitconfig
 ```
 
-Or use `rsync` to copy them all 
+Or use `rsync` to copy them all and change the permissions afterwards
 
 ```bash
 sudo rsync -a /mnt/c/Users/spenc/bashDotfiles/ ~/
+# then 
+chmod 0644 .gitconfig # etc
 ```
 
 ## WSL on VSCode

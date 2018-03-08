@@ -1,0 +1,56 @@
+{
+  "Console Log": {
+    "prefix": "clg",
+    "body": [
+      "console.log($1)"
+    ],
+    "description": "console.log"
+  },
+  "Console Log With Lines": {
+    "prefix": "clgg",
+    "body": [
+      "console.log('====================')",
+      "console.log($1)",
+      "console.log('====================')"
+    ],
+    "description": "console.log with lines"
+  },
+  "Module Exports": {
+    "prefix": "me",
+    "body": [
+      "module.exports = {",
+      "  $1",
+      "}"
+    ],
+    "description": "module.exports = {}"
+  },
+  "Const Require Statement": {
+    "prefix": "creq",
+    "body": [
+      "const { $2 } = require('$1')"
+    ],
+    "description": "require exported var"
+  },
+  "Fat arrow": {
+    "prefix": "fa",
+    "body": "=>",
+    "description": "insert a fat arrow =>"
+  },
+  "React component": {
+    "prefix": "rea",
+    "body": [
+      "class $1 extends React.Component {",
+      "  render() {",
+      "    return (",
+      "      <div>",
+      "        <p>jsx goes here</p>",
+      "      </div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "insert starter for React Module"
+  }
+}

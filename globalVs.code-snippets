@@ -1,4 +1,20 @@
 {
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
   "Console Log": {
     "prefix": "clg",
     "body": [
@@ -9,9 +25,9 @@
   "Console Log With Lines": {
     "prefix": "clgg",
     "body": [
-      "console.log('====================')",
+      "console.log('=====================')",
       "console.log($1)",
-      "console.log('====================')"
+      "console.log('=====================')"
     ],
     "description": "console.log with lines"
   },
@@ -39,12 +55,14 @@
   "React component": {
     "prefix": "rea",
     "body": [
+      "import React from 'react'",
+      "",
       "class $1 extends React.Component {",
       "  render() {",
       "    return (",
-      "      <div>",
+      "      <React.Fragment>",
       "        <p>jsx goes here</p>",
-      "      </div>",
+      "      </React.Fragment>",
       "    )",
       "  }",
       "}",
@@ -52,5 +70,36 @@
       "export default $1"
     ],
     "description": "insert starter for React Module"
-  }
+  },
+  "Import styled components": {
+    "prefix": "isc",
+    "body": [
+      "import styled from 'styled-components'"
+    ],
+    "description": "import styled components"
+  },
+  "Styled Components Theme Props": {
+    "prefix": "tp",
+    "body": [
+      "${props => props.theme.$1};"
+    ],
+    "description": "Theme Props"
+  },
+  "Styled Components Component": {
+    "prefix": "sc",
+    "body": [
+      "const $1 = styled.$2`",
+      "  $3",
+      "`"
+    ],
+    "description": "New styled component"
+  },
+  "Marge and Paddy!": {
+    "prefix": "marp",
+    "body": [
+      "margin: $1rem;",
+      "padding: $1rem;"
+    ],
+    "description": "margin and padding snippy"
+  },
 }

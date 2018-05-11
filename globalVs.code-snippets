@@ -71,6 +71,45 @@
     ],
     "description": "insert starter for React Module"
   },
+  "React context component": {
+    "prefix": "rac",
+    "body": [
+      "import React from 'react'",
+      "// Context is made up of two things",
+      "// Provider - Single as close to top level as possible",
+      "// Consumer - Multiple have multiple consumers",
+      "export const $1Context = React.createContext()",
+      "",
+      "export class $1Provider extends React.Component {",
+      "  state = {",
+      "    item1: 1,",
+      "    item2: 2",
+      "  }",
+      "",
+      "  // add function here",
+      "  functionHere = () => {",
+      "    this.setState({",
+      "      item1: 2,",
+      "      item2: 3",
+      "    })",
+      "  }",
+      "  render() {",
+      "    return (",
+      "      <$1Context.Provider",
+      "        value={{",
+      "          ...this.state,",
+      "          functionHere: this.functionHere",
+      "        }}",
+      "      >",
+      "        {this.props.children}",
+      "      </$1Context.Provider>",
+      "    )",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "insert scaffold for React context"
+  },
   "Import styled components": {
     "prefix": "isc",
     "body": [
@@ -99,6 +138,19 @@
     "body": [
       "margin: $1rem;",
       "padding: $1rem;"
+    ],
+    "description": "margin and padding snippy"
+  },
+  "Griddyup! Grid yo!": {
+    "prefix": "grid",
+    "body": [
+      "display: grid;",
+      "grid-template-columns: repeat(12, 1fr);",
+      "grid-template-rows: auto;",
+      "grid-template-areas:",
+      "'. . . h h h h h h . . .'",
+      "'. . . m m m m m m . . .'",
+      "'. . . f f f f f f . . .';"
     ],
     "description": "margin and padding snippy"
   },

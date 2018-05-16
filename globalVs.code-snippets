@@ -72,7 +72,7 @@
     "description": "insert starter for React Module"
   },
   "React context component": {
-    "prefix": "rac",
+    "prefix": "ctx",
     "body": [
       "import React from 'react'",
       "// Context is made up of two things",
@@ -153,5 +153,78 @@
       "'. . . f f f f f f . . .';"
     ],
     "description": "margin and padding snippy"
+  },
+  // react lifecycle methods
+  "componentDidCatch": {
+    "prefix": "cdc",
+    "body": [
+      "componentDidCatch() {",
+      "  $1",
+      "{",
+    ],
+    "description": "componentDidCatch snippet"
+  },
+  "componentDidMount": {
+    "prefix": "cdm",
+    "body": [
+      "componentDidMount() {",
+      "  $1",
+      "}",
+    ],
+    "description": "componentDidMount snippet"
+  },
+  "componentDidUpdate": {
+    "prefix": "cdu",
+    "body": [
+      "componentDidUpdate() {",
+      "  $1",
+      "}",
+    ],
+    "description": "componentDidUpdate snippet"
+  },
+  "componentWillMount": {
+    "prefix": "cwm",
+    "body": [
+      "componentWillMount() {",
+      "  $1",
+      "}",
+    ],
+    "description": "componentWillMount snippet"
+  },
+  "componentWillReceiveProps": {
+    "prefix": "c",
+    "body": [
+      "componentWillReceiveProps() {",
+      "  $1",
+      "}",
+    ],
+    "description": "componentWillReceiveProps snippet"
+  },
+  "componentWillUnmount": {
+    "prefix": "cwun",
+    "body": [
+      "componentWillUnmount() {",
+      "  $1",
+      "}",
+    ],
+    "description": "componentWillUnmount snippet"
+  },
+  "componentWillUpdate": {
+    "prefix": "cwup",
+    "body": [
+      "componentWillUpdate() {",
+      "  $1",
+      "}",
+    ],
+    "description": "componentWillUpdate snippet"
+  },
+  "shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": [
+      "shouldComponentUpdate() {",
+      "  $1",
+      "}",
+    ],
+    "description": "shouldComponentUpdate snippet"
   },
 }

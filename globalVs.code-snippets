@@ -1,230 +1,250 @@
 {
-  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-  // Placeholders with the same ids are connected.
-  // Example:
-  // "Print to console": {
-  // 	"scope": "javascript,typescript",
-  // 	"prefix": "log",
-  // 	"body": [
-  // 		"console.log('$1');",
-  // 		"$2"
-  // 	],
-  // 	"description": "Log output to console"
-  // }
-  "Console Log": {
-    "prefix": "clg",
-    "body": [
-      "console.log($1)"
-    ],
-    "description": "console.log"
-  },
-  "Console Log With Lines": {
-    "prefix": "clgg",
-    "body": [
-      "console.log('=====================')",
-      "console.log($1)",
-      "console.log('=====================')"
-    ],
-    "description": "console.log with lines"
-  },
-  "Module Exports": {
-    "prefix": "me",
-    "body": [
-      "module.exports = {",
-      "  $1",
-      "}"
-    ],
-    "description": "module.exports = {}"
-  },
-  "Const Require Statement": {
-    "prefix": "creq",
-    "body": [
-      "const { $2 } = require('$1')"
-    ],
-    "description": "require exported var"
-  },
-  "Fat arrow": {
-    "prefix": "fa",
-    "body": "=>",
-    "description": "insert a fat arrow =>"
-  },
-  "React component": {
-    "prefix": "rea",
-    "body": [
-      "import React from 'react'",
-      "",
-      "class $1 extends React.Component {",
-      "  render() {",
-      "    return (",
-      "      <React.Fragment>",
-      "        <p>jsx goes here</p>",
-      "      </React.Fragment>",
-      "    )",
-      "  }",
-      "}",
-      "",
-      "export default $1"
-    ],
-    "description": "insert starter for React Module"
-  },
-  "React context component": {
-    "prefix": "ctx",
-    "body": [
-      "import React from 'react'",
-      "// Context is made up of two things",
-      "// Provider - Single as close to top level as possible",
-      "// Consumer - Multiple have multiple consumers",
-      "export const $1Context = React.createContext()",
-      "",
-      "export class $1Provider extends React.Component {",
-      "  state = {",
-      "    item1: 1,",
-      "    item2: 2",
-      "  }",
-      "",
-      "  // add function here",
-      "  functionHere = () => {",
-      "    this.setState({",
-      "      item1: 2,",
-      "      item2: 3",
-      "    })",
-      "  }",
-      "  render() {",
-      "    return (",
-      "      <$1Context.Provider",
-      "        value={{",
-      "          ...this.state,",
-      "          functionHere: this.functionHere",
-      "        }}",
-      "      >",
-      "        {this.props.children}",
-      "      </$1Context.Provider>",
-      "    )",
-      "  }",
-      "}",
-      ""
-    ],
-    "description": "insert scaffold for React context"
-  },
-  "Import styled components": {
-    "prefix": "isc",
-    "body": [
-      "import styled from 'styled-components'"
-    ],
-    "description": "import styled components"
-  },
-  "Styled Components Theme Props": {
-    "prefix": "tp",
-    "body": [
-      "${props => props.theme.$1};"
-    ],
-    "description": "Theme Props"
-  },
-  "Styled Components Component": {
-    "prefix": "sc",
-    "body": [
-      "const $1 = styled.$2`",
-      "  $3",
-      "`"
-    ],
-    "description": "New styled component"
-  },
-  "Marge and Paddy!": {
-    "prefix": "marp",
-    "body": [
-      "margin: $1rem;",
-      "padding: $1rem;"
-    ],
-    "description": "margin and padding snippy"
-  },
-  "Griddyup! Grid yo!": {
-    "prefix": "grid",
-    "body": [
-      "display: grid;",
-      "grid-template-columns: repeat(12, 1fr);",
-      "grid-template-rows: auto;",
-      "grid-template-areas:",
-      "'. . . h h h h h h . . .'",
-      "'. . . m m m m m m . . .'",
-      "'. . . f f f f f f . . .';"
-    ],
-    "description": "margin and padding snippy"
-  },
-  // react lifecycle methods
-  "componentDidCatch": {
-    "prefix": "cdc",
-    "body": [
-      "componentDidCatch() {",
-      "  $1",
-      "{",
-    ],
-    "description": "componentDidCatch snippet"
-  },
-  "componentDidMount": {
-    "prefix": "cdm",
-    "body": [
-      "componentDidMount() {",
-      "  $1",
-      "}",
-    ],
-    "description": "componentDidMount snippet"
-  },
-  "componentDidUpdate": {
-    "prefix": "cdu",
-    "body": [
-      "componentDidUpdate() {",
-      "  $1",
-      "}",
-    ],
-    "description": "componentDidUpdate snippet"
-  },
-  "componentWillMount": {
-    "prefix": "cwm",
-    "body": [
-      "componentWillMount() {",
-      "  $1",
-      "}",
-    ],
-    "description": "componentWillMount snippet"
-  },
-  "componentWillReceiveProps": {
-    "prefix": "c",
-    "body": [
-      "componentWillReceiveProps() {",
-      "  $1",
-      "}",
-    ],
-    "description": "componentWillReceiveProps snippet"
-  },
-  "componentWillUnmount": {
-    "prefix": "cwun",
-    "body": [
-      "componentWillUnmount() {",
-      "  $1",
-      "}",
-    ],
-    "description": "componentWillUnmount snippet"
-  },
-  "componentWillUpdate": {
-    "prefix": "cwup",
-    "body": [
-      "componentWillUpdate() {",
-      "  $1",
-      "}",
-    ],
-    "description": "componentWillUpdate snippet"
-  },
-  "shouldComponentUpdate": {
-    "prefix": "scu",
-    "body": [
-      "shouldComponentUpdate() {",
-      "  $1",
-      "}",
-    ],
-    "description": "shouldComponentUpdate snippet"
-  },
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Console Log": {
+		"prefix": "clg",
+		"body": [
+			"console.log($1)"
+		],
+		"description": "console.log"
+	},
+	"Console Log With Lines": {
+		"prefix": "clgg",
+		"body": [
+			"console.log('=====================')",
+			"console.log($1)",
+			"console.log('=====================')"
+		],
+		"description": "console.log with lines"
+	},
+	"Module Exports": {
+		"prefix": "me",
+		"body": [
+			"module.exports = {",
+			"  $1",
+			"}"
+		],
+		"description": "module.exports = {}"
+	},
+	"Const Require Statement": {
+		"prefix": "creq",
+		"body": [
+			"const { $2 } = require('$1')"
+		],
+		"description": "require exported var"
+	},
+	"Fat arrow": {
+		"prefix": "fa",
+		"body": "=>",
+		"description": "insert a fat arrow =>"
+	},
+	"React component": {
+		"prefix": "rea",
+		"body": [
+			"import React from 'react'",
+			"",
+			"class $1 extends React.Component {",
+			"  render() {",
+			"    return (",
+			"      <React.Fragment>",
+			"        <p>jsx goes here</p>",
+			"      </React.Fragment>",
+			"    )",
+			"  }",
+			"}",
+			"",
+			"export default $1"
+		],
+		"description": "insert starter for React Module"
+	},
+	"React stateless functional component": {
+		"prefix": "sfc",
+		"body": [
+			"import React from 'react'",
+			"import PropTypes from 'prop-types'",
+			"",
+			"const $1 = (props) => {",
+			"  return (",
+			"    <React.Fragment>",
+			"      <p>jsx goes here</p>",
+			"    </React.Fragment>",
+			"  )",
+			"}",
+			"",
+			"$1.propTypes = {}",
+			"",
+			"export default $1"
+		],
+		"description": "insert starter for stateless functional component"
+	},
+	"React context component": {
+		"prefix": "ctx",
+		"body": [
+			"import React from 'react'",
+			"// Context is made up of two things",
+			"// Provider - Single as close to top level as possible",
+			"// Consumer - Multiple have multiple consumers",
+			"export const $1Context = React.createContext()",
+			"",
+			"export class $1Provider extends React.Component {",
+			"  state = {",
+			"    item1: 1,",
+			"    item2: 2",
+			"  }",
+			"",
+			"  // add function here",
+			"  functionHere = () => {",
+			"    this.setState({",
+			"      item1: 2,",
+			"      item2: 3",
+			"    })",
+			"  }",
+			"  render() {",
+			"    return (",
+			"      <$1Context.Provider",
+			"        value={{",
+			"          ...this.state,",
+			"          functionHere: this.functionHere",
+			"        }}",
+			"      >",
+			"        {this.props.children}",
+			"      </$1Context.Provider>",
+			"    )",
+			"  }",
+			"}",
+			""
+		],
+		"description": "insert scaffold for React context"
+	},
+	"Import styled components": {
+		"prefix": "isc",
+		"body": [
+			"import styled from 'styled-components'"
+		],
+		"description": "import styled components"
+	},
+	"Styled Components Theme Props": {
+		"prefix": "tp",
+		"body": [
+			"${props => props.theme.$1};"
+		],
+		"description": "Theme Props"
+	},
+	"Styled Components Component": {
+		"prefix": "sc",
+		"body": [
+			"const $1 = styled.$2`",
+			"  $3",
+			"`"
+		],
+		"description": "New styled component"
+	},
+	"Marge and Paddy!": {
+		"prefix": "marp",
+		"body": [
+			"margin: $1rem;",
+			"padding: $1rem;"
+		],
+		"description": "margin and padding snippy"
+	},
+	"Griddyup! Grid yo!": {
+		"prefix": "grid",
+		"body": [
+			"display: grid;",
+			"grid-template-columns: repeat(12, 1fr);",
+			"grid-template-rows: auto;",
+			"grid-template-areas:",
+			"'. . . h h h h h h . . .'",
+			"'. . . m m m m m m . . .'",
+			"'. . . f f f f f f . . .';"
+		],
+		"description": "margin and padding snippy"
+	},
+	// react lifecycle methods
+	"componentDidCatch": {
+		"prefix": "cdc",
+		"body": [
+			"componentDidCatch() {",
+			"  $1",
+			"{",
+		],
+		"description": "componentDidCatch snippet"
+	},
+	"componentDidMount": {
+		"prefix": "cdm",
+		"body": [
+			"componentDidMount() {",
+			"  $1",
+			"}",
+		],
+		"description": "componentDidMount snippet"
+	},
+	"componentDidUpdate": {
+		"prefix": "cdu",
+		"body": [
+			"componentDidUpdate() {",
+			"  $1",
+			"}",
+		],
+		"description": "componentDidUpdate snippet"
+	},
+	"componentWillMount": {
+		"prefix": "cwm",
+		"body": [
+			"componentWillMount() {",
+			"  $1",
+			"}",
+		],
+		"description": "componentWillMount snippet"
+	},
+	"componentWillReceiveProps": {
+		"prefix": "c",
+		"body": [
+			"componentWillReceiveProps() {",
+			"  $1",
+			"}",
+		],
+		"description": "componentWillReceiveProps snippet"
+	},
+	"componentWillUnmount": {
+		"prefix": "cwun",
+		"body": [
+			"componentWillUnmount() {",
+			"  $1",
+			"}",
+		],
+		"description": "componentWillUnmount snippet"
+	},
+	"componentWillUpdate": {
+		"prefix": "cwup",
+		"body": [
+			"componentWillUpdate() {",
+			"  $1",
+			"}",
+		],
+		"description": "componentWillUpdate snippet"
+	},
+	"shouldComponentUpdate": {
+		"prefix": "scu",
+		"body": [
+			"shouldComponentUpdate() {",
+			"  $1",
+			"}",
+		],
+		"description": "shouldComponentUpdate snippet"
+	},
 }

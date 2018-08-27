@@ -2,7 +2,7 @@
 
 Listed out my locall installed apps
 
-```shell
+```bash
   7zip 16.4.0.20170506
   7zip.install 16.4.0.20170506
   Atom 1.0.7

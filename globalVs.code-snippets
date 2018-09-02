@@ -129,7 +129,7 @@
   },
   "Styled Components Theme Props": {
     "prefix": "tp",
-    "body": ["${props => props.theme.$1};"],
+    "body": ["${({ theme }) => theme.$1};"],
     "description": "Theme Props"
   },
   "Styled Components Component": {
@@ -203,5 +203,18 @@
     "prefix": "scu",
     "body": ["shouldComponentUpdate() {", "  $1", "}"],
     "description": "shouldComponentUpdate snippet"
+  },
+  "frontmatterBlock": {
+    "prefix": "fmb",
+    "body": [
+      "---",
+      "path: ''",
+      "date: ''",
+      "title: ''",
+      "tags: ['information', 'learning', 'guide']",
+      "published: false",
+      "---"
+    ],
+    "description": "frontmatter block for frontmattering"
   }
 }

@@ -7,8 +7,6 @@ code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension cssho.vscode-svgviewer
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.auto-close-tag
-code --install-extension formulahendry.auto-rename-tag
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension Gruntfuggly.todo-tree
 code --install-extension johnpapa.vscode-peacock
@@ -24,7 +22,6 @@ code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension naumovs.color-highlight
 code --install-extension octref.vetur
-code --install-extension Prisma.vscode-graphql
 code --install-extension sdras.night-owl
 code --install-extension silvenon.mdx
 code --install-extension streetsidesoftware.code-spell-checker

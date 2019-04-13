@@ -5,41 +5,38 @@
   "editor.wordWrap": "on",
   "editor.snippetSuggestions": "top",
   "git.confirmSync": false,
-  "editor.fontFamily":
-    "'Dank Mono', Monoid, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "'Dank Mono', Monoid, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 18,
   "editor.fontLigatures": true,
+  "git.autofetch": true,
   "git.enableSmartCommit": true,
-  "vsicons.dontShowNewVersionMessage": true,
-  "emojisense.languages": {
-    "markdown": true,
-    "plaintext": {
-      "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
-    },
-    "git-commit": true,
-    "json": true,
-    "javascript": true
-  },
   "cSpell.language": "en-GB",
+  "cSpell.allowedSchemas": ["file", "untitled", "*.mdx"],
   "cSpell.userWords": [
     "Arial",
     "Blackfriars",
     "Chingu",
     "Gmail",
     "Helvetica",
+    "Netlify",
     "Prisma",
     "Roboto",
     "Unmount",
     "Zeit",
+    "analytics",
     "apps",
+    "autolink",
     "checkbox",
+    "codesandbox",
     "cryptocurrency",
     "deadlift",
+    "destructure",
     "dodgerblue",
     "dotfile",
     "dotfiles",
     "frontmatter",
+    "graphql",
+    "iframe",
     "linebreak",
     "mediumseagreen",
     "nowrap",
@@ -47,13 +44,45 @@
     "papayawhip",
     "precommit",
     "prettierrc",
+    "prismjs",
     "scottspence",
-    "spences"
+    "serviceworker",
+    "sitemap",
+    "smartypants",
+    "spences",
+    "swanley"
   ],
-  "workbench.iconTheme": "vscode-icons",
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "latex",
+    "less",
+    "markdown",
+    "mdx",
+    "php",
+    "plaintext",
+    "pub",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
   "explorer.confirmDragAndDrop": false,
-  "codestats.apikey":
-    "SFMyNTY.YzNCbGJtTmxjekV3IyNNVGsyT1E9PQ.Fm7Y4SovHsu9rxrd3AX7oJxD54yoeu015aYVed0qTt4",
+  "codestats.apikey": "SFMyNTY.YzNCbGJtTmxjekV3IyNNVGsyT1E9PQ.Fm7Y4SovHsu9rxrd3AX7oJxD54yoeu015aYVed0qTt4",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -76,8 +105,6 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSaveTimeout": 5000,
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
   "extensions.autoUpdate": true,
   "http.proxyStrictSSL": false,
   "gitlens.advanced.messages": {
@@ -90,11 +117,83 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "workbench.colorTheme": "Night Owl",
-  "gitlens.historyExplorer.enabled": true,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 16,
   "files.defaultLanguage": "markdown",
   "window.zoomLevel": 0,
   "editor.mouseWheelZoom": true,
-  "vsicons.projectDetection.autoReload": true
+  "files.eol": "\n",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+  "workbench.settings.editor": "json",
+  "workbench.colorTheme": "Night Owl",
+  "window.titleBarStyle": "custom",
+  "breadcrumbs.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "mdx": "html"
+  },
+  "terminal.integrated.rendererType": "dom",
+  "todo-tree.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  "todo-tree.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
+  "git.promptToSaveFilesBeforeCommit": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "search.location": "panel",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "workbench.iconTheme": "vscode-icons",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

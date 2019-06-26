@@ -2,7 +2,7 @@
 
 This is my own opinionated list of settings I use for my coding.
 
-So far I have listed ou the following:
+So far I have listed out the following:
 
 [VSCode](vscode.md)
 

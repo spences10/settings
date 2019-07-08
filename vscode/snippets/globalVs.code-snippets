@@ -242,5 +242,11 @@
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "body": "= () => {}",
     "description": "Use a function return for react properties"
-  }
+  },
+	"import React": {
+		"prefix": "ir",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"body": "import React from 'react'",
+		"description": "Import React"
+	}
 }

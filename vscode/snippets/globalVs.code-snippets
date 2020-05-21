@@ -132,6 +132,26 @@
     "body": ["${({ theme }) => theme.$1};"],
     "description": "Theme Props"
   },
+  "Styled Components Theme Props font size": {
+    "prefix": "tpfs",
+    "body": ["${({ theme }) => theme.fontSize.$1};"],
+    "description": "Theme Props Font Size"
+  },
+  "Styled Components Theme Props colour": {
+    "prefix": "tpc",
+    "body": ["${({ theme }) => theme.colours.$1};"],
+    "description": "Theme Props colours"
+  },
+  "Styled Components Theme Props box shadow": {
+    "prefix": "tpbs",
+    "body": ["${({ theme }) => theme.boxShadow.$1};"],
+    "description": "Theme Props box shadow"
+  },
+  "Styled Components Theme Props spacing": {
+    "prefix": "tps",
+    "body": ["${({ theme }) => theme.spacing['$1']};"],
+    "description": "Theme Props spacing"
+  },
   "Styled Components Component": {
     "prefix": "sc",
     "body": ["const $1 = styled.$2`", "  $3", "`"],
@@ -208,11 +228,10 @@
     "prefix": "fmb",
     "body": [
       "---",
-      "path: ''",
-      "date: ''",
-      "title: ''",
-      "tags: ['information', 'learning', 'guide']",
-      "published: false",
+      "date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "title: $1",
+      "tags: ['$2', '$3', '$4']",
+      "private: true",
       "---"
     ],
     "description": "frontmatter block for frontmattering"
@@ -231,22 +250,34 @@
     ],
     "description": "(EXPERIMENTAL) React: Use State. See https://reactjs.org/hooks"
   },
-  "Arrow function": {
-    "prefix": "af",
+  "Export const": {
+    "prefix": "ecf",
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
-    "body": "() => ()",
-    "description": "Use a arrown function return"
+    "body": "export const ${0} = () => {}",
+    "description": "Export const function"
+  },
+  "Export function": {
+    "prefix": "ecf",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "body": "export function ${0}() {}",
+    "description": "Export function"
   },
   "function": {
     "prefix": "fun",
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
-    "body": "= () => {}",
-    "description": "Use a function return for react properties"
+    "body": "() => {}",
+    "description": "Anon function"
   },
-	"import React": {
-		"prefix": "ir",
-		"scope": "javascript,javascriptreact,typescript,typescriptreact",
-		"body": "import React from 'react'",
-		"description": "Import React"
-	}
+  "import React": {
+    "prefix": "ir",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "body": "import React from 'react'",
+    "description": "import React statement"
+  },
+  "import {} from": {
+    "prefix": "imfr",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "body": "import {${2}} from '${1}'",
+    "description": "import {} from statement"
+  }
 }

@@ -4,14 +4,18 @@ first things first: `sudo apt update` then `sudo apt -y upgrade`
 
 ## Install node
 
-Installing node via the instructions given on the nodejs.org site doesn't give the correct permissions:
+Installing node via the instructions given on the nodejs.org site
+doesn't give the correct permissions:
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-Instead do this via nvm, thanks to [micahgodbolt](https://gist.github.com/micahgodbolt) for the handy Gist here: https://gist.github.com/micahgodbolt/8b9a338c8bab7bc147975646ea20826c
+Instead do this via nvm, thanks to
+[micahgodbolt](https://gist.github.com/micahgodbolt) for the handy
+Gist here:
+https://gist.github.com/micahgodbolt/8b9a338c8bab7bc147975646ea20826c
 
 basically:
 
@@ -22,14 +26,17 @@ node -v
 npm -v
 ```
 
-If you find the startup time of [bash taking too long] then take a look at [using n] instead
+If you find the startup time of [bash taking too long] then take a
+look at [using n] instead
 
 [bash taking too long]: https://github.com/Microsoft/WSL/issues/776
-[using n]: https://github.com/Microsoft/WSL/issues/776#issuecomment-266112578
+[using n]:
+  https://github.com/Microsoft/WSL/issues/776#issuecomment-266112578
 
 ## Build Tools
 
-To compile and install native addons from npm you may also need to install build tools:
+To compile and install native addons from npm you may also need to
+install build tools:
 
 ```bash
 sudo apt-get install -y build-essential
@@ -52,7 +59,7 @@ curl -L https://get.oh-my.fish | fish
 ### Install OMF theme
 
 ```bash
-omf install clearance 
+omf install clearance
 ```
 
 ## GitHub SSH
@@ -74,7 +81,7 @@ Or use `rsync` to copy them all and change the permissions afterwards
 
 ```bash
 sudo rsync -a /mnt/c/Users/spenc/bashDotfiles/ ~/
-# then 
+# then
 chmod 0644 .gitconfig # etc
 ```
 
@@ -83,4 +90,3 @@ chmod 0644 .gitconfig # etc
 Running nodejs on wsl from visual studio code
 
 https://blogs.msdn.microsoft.com/commandline/2017/10/27/running-node-js-on-wsl-from-visual-studio-code/
-

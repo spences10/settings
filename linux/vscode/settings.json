@@ -1,0 +1,42 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.fontFamily": "'Victor Mono','Dank Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontSize": 18,
+  "editor.fontWeight": "700",
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.suggestSelection": "first",
+  // making vs code awesome
+  "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false,
+  "editor.minimap.enabled": false,
+  // /making vs code awesome
+  "workbench.settings.editor": "json",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Night Owl",
+  "showGitMetrics": true,
+  "cSpell.language": "en,en-GB",
+  "cSpell.allowCompoundWords": true,
+  "cSpell.enableFiletypes": ["mdx"],
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 0,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}

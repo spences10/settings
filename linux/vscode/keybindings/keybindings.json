@@ -11,8 +11,23 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+g",
-    "command": "workbench.view.scm",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "ctrl+k ctrl+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+k ctrl+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+k ctrl+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "ctrl+k ctrl+x",
+    "command": "workbench.extensions.action.showInstalledExtensions"
+  },
+  {
+    "key": "ctrl+k ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
   }
 ]

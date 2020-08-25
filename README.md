@@ -4,9 +4,9 @@ This is my own opinionated list of settings I use for my coding.
 
 So far I have listed out the following:
 
-[VSCode](vscode.md)
+VSCode
 
-[Chocolatey](chocolate.md)
+[Chocolatey]('../../windows/chocolatey.md')
 
 [Terminal](terminal.md)
 
@@ -14,4 +14,6 @@ So far I have listed out the following:
 
 [Chrome](chrome.md)
 
-I use [Monoid](https://github.com/larsenwork/monoid) for terminal and editor 👍
+~~I use [Monoid](https://github.com/larsenwork/monoid) for terminal and editor 👍~~
+
+I use Victor Mono

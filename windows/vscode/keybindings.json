@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+k ctrl+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+k ctrl+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+k ctrl+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "ctrl+k ctrl+x",
+    "command": "workbench.extensions.action.showInstalledExtensions"
+  },
+  {
+    "key": "ctrl+k ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+k ctrl+z",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "ctrl+k ctrl+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+k ctrl+q",
+    "command": "workbench.action.toggleTabsVisibility"
+  }
+]

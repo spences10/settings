@@ -65,6 +65,24 @@
         "hidden": false,
         "name": "WLinux",
         "source": "Windows.Terminal.Wsl"
+      },
+      {
+        "guid": "{6f9994f0-4403-5e85-9cce-98e5da3839bb}",
+        "hidden": false,
+        "name": "Ubuntu-16.04",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+        "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+        "hidden": false,
+        "name": "Ubuntu-18.04",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+        "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+        "hidden": false,
+        "name": "Ubuntu-20.04",
+        "source": "Windows.Terminal.Wsl"
       }
     ]
   },
@@ -148,6 +166,16 @@
         "splitMode": "duplicate"
       },
       "keys": "ctrl+alt+a"
-    }
+    },
+    { "command": "duplicateTab", "keys": "ctrl+shift+d" },
+    { "command": { "action": "adjustFontSize", "delta": 1 }, "keys": "ctrl+=" },
+    {
+      "command": { "action": "adjustFontSize", "delta": -1 },
+      "keys": "ctrl+-"
+    },
+    { "command": "resetFontSize", "keys": "ctrl+0" }
   ]
 }
+
+// Details on shortcuts 👇
+// https://docs.microsoft.com/en-us/windows/terminal/customize-settings/actions

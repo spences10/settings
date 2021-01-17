@@ -44,25 +44,6 @@
     "body": "=>",
     "description": "insert a fat arrow =>"
   },
-  "React component": {
-    "prefix": "rea",
-    "body": [
-      "import React from 'react'",
-      "",
-      "class $1 extends React.Component {",
-      "  render() {",
-      "    return (",
-      "      <React.Fragment>",
-      "        <p>jsx goes here</p>",
-      "      </React.Fragment>",
-      "    )",
-      "  }",
-      "}",
-      "",
-      "export default $1"
-    ],
-    "description": "insert starter for React Module"
-  },
   "React stateless functional component": {
     "prefix": "sfc",
     "body": [
@@ -174,55 +155,6 @@
       "'. . . f f f f f f . . .';"
     ],
     "description": "margin and padding snippy"
-  },
-  // react lifecycle methods
-  "componentDidCatch": {
-    "prefix": "cdc",
-    "body": ["componentDidCatch() {", "  $1", "{"],
-    "description": "componentDidCatch snippet"
-  },
-  "componentDidMount": {
-    "prefix": "cdm",
-    "body": ["componentDidMount() {", "  $1", "}"],
-    "description": "componentDidMount snippet"
-  },
-  "componentDidUpdate": {
-    "prefix": "cdu",
-    "body": [
-      "componentDidUpdate(prevProps, prevState) {",
-      "  $1",
-      "}"
-    ],
-    "description": "componentDidUpdate snippet"
-  },
-  "componentWillMount": {
-    "prefix": "cwm",
-    "body": ["componentWillMount() {", "  $1", "}"],
-    "description": "componentWillMount snippet"
-  },
-  "componentWillReceiveProps": {
-    "prefix": "cwrp",
-    "body": ["componentWillReceiveProps() {", "  $1", "}"],
-    "description": "componentWillReceiveProps snippet"
-  },
-  "componentWillUnmount": {
-    "prefix": "cwun",
-    "body": ["componentWillUnmount() {", "  $1", "}"],
-    "description": "componentWillUnmount snippet"
-  },
-  "componentWillUpdate": {
-    "prefix": "cwup",
-    "body": [
-      "componentWillUpdate(nextProps, nextState) {",
-      "  $1",
-      "}"
-    ],
-    "description": "componentWillUpdate snippet"
-  },
-  "shouldComponentUpdate": {
-    "prefix": "scu",
-    "body": ["shouldComponentUpdate() {", "  $1", "}"],
-    "description": "shouldComponentUpdate snippet"
   },
   "frontmatterBlock": {
     "prefix": "fmb",

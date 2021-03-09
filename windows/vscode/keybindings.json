@@ -31,5 +31,17 @@
   {
     "key": "ctrl+k ctrl+q",
     "command": "workbench.action.toggleTabsVisibility"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.zoomReset"
+  },
+  {
+    "key": "ctrl+alt+s ctrl+alt+c",
+    "command": "workbench.action.toggleScreencastMode"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
   }
 ]

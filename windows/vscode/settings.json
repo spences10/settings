@@ -15,14 +15,10 @@
     "source.organizeImports": true
   },
   "editor.suggestSelection": "first",
-  // making vs code awesome
   "workbench.activityBar.visible": false,
-  "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
-  "workbench.statusBar.visible": true,
   "editor.minimap.enabled": false,
   "editor.lineHeight": 35,
-  // /making vs code awesome
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Night Owl",
   "showGitMetrics": true,
@@ -100,5 +96,6 @@
   "screencastMode.mouseIndicatorColor": "#663399",
   "screencastMode.mouseIndicatorSize": 60,
   "screencastMode.onlyKeyboardShortcuts": true,
-  "screencastMode.verticalOffset": 5
+  "screencastMode.verticalOffset": 5,
+  "cSpell.userWords": ["Cloudinary"]
 }

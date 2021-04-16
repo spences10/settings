@@ -204,7 +204,13 @@
   "pre JSON": {
     "prefix": "prejson",
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
-    "body": "<pre>{JSON.stringify('${1}', null, 2)}</pre>",
+    "body": "<pre>{JSON.stringify(${1}, null, 2)}</pre>",
     "description": "JSON.stringify in pre tag"
+  },
+  "JSON.stringify": {
+    "prefix": "jsonstringify",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "body": "JSON.stringify(${1}, null, 2)",
+    "description": "JSON.stringify"
   }
 }

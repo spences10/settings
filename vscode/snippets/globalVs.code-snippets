@@ -199,7 +199,7 @@
   "prettier": {
     "prefix": "prett",
     "body": "{  \"singleQuote\": true,  \"semi\": false,  \"trailingComma\": \"es5\",  \"printWidth\": 70,  \"arrowParens\": \"avoid\",  \"proseWrap\": \"always\" }",
-    "description": "import {} from statement"
+    "description": "preferred Prettier config"
   },
   "pre JSON": {
     "prefix": "prejson",
@@ -212,5 +212,44 @@
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "body": "JSON.stringify(${1}, null, 2)",
     "description": "JSON.stringify"
+  },
+  "getStaticProps": {
+    "prefix": "getStaticProps",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "body": [
+      "export async function getStaticProps(context) {",
+      "  return {",
+      "    props: {}, // will be passed to the page component as props",
+      "  }",
+      "}"
+    ],
+    "description": "(Static Generation): Fetch data at build time."
+  },
+  "getStaticPaths": {
+    "prefix": "getStaticPaths",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "body": [
+      "export async function getStaticPaths() {",
+      "  return {",
+      "    paths: [",
+      "      { params: { ... } } // See the paths section ",
+      "    ],",
+      "    fallback: true or false // See the fallback section",
+      "  };",
+      "}"
+    ],
+    "description": "(Static Generation): Specify dynamic routes to pre-render pages based on data."
+  },
+  "getServerSideProps": {
+    "prefix": "getServerSideProps",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "body": [
+      "export async function getServerSideProps(context) {",
+      "  return {",
+      "    props: {}, // will be passed to the page component as props",
+      "  }",
+      "}"
+    ],
+    "description": "(Server-side Rendering): Fetch data on each request."
   }
 }

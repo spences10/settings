@@ -34,7 +34,6 @@
     "javascript": "javascriptreact"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
   "workbench.settings.editor": "json",
   "git.autofetch": true,
   "workbench.startupEditor": "newUntitledFile",

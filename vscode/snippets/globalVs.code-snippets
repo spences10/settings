@@ -203,13 +203,13 @@
   },
   "pre JSON": {
     "prefix": "prejson",
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact,svelte",
     "body": "<pre>{JSON.stringify(${1}, null, 2)}</pre>",
     "description": "JSON.stringify in pre tag"
   },
   "JSON.stringify": {
     "prefix": "jsonstringify",
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact,svelte",
     "body": "JSON.stringify(${1}, null, 2)",
     "description": "JSON.stringify"
   },

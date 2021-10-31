@@ -1,0 +1,83 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2021-10-31T18:40:39.582-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "ModernFlyouts.ModernFlyouts"
+        },
+        {
+          "PackageIdentifier": "Lexikos.AutoHotkey"
+        },
+        {
+          "PackageIdentifier": "CPUID.HWMonitor"
+        },
+        {
+          "PackageIdentifier": "Discord.Discord"
+        },
+        {
+          "PackageIdentifier": "Logitech.Options"
+        },
+        {
+          "PackageIdentifier": "Microsoft.Edge"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsTerminal.Preview"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsTerminal"
+        },
+        {
+          "PackageIdentifier": "Microsoft.OneDrive"
+        },
+        {
+          "PackageIdentifier": "Meltytech.Shotcut"
+        },
+        {
+          "PackageIdentifier": "XSplit.VCam"
+        },
+        {
+          "PackageIdentifier": "code52.Carnac"
+        },
+        {
+          "PackageIdentifier": "Insomnia.Insomnia"
+        },
+        {
+          "PackageIdentifier": "VideoLAN.VLC"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudioCode.Insiders"
+        },
+        {
+          "PackageIdentifier": "7zip.7zip"
+        },
+        {
+          "PackageIdentifier": "Olivia.VIA"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudioCode"
+        },
+        {
+          "PackageIdentifier": "QMK.QMKToolbox"
+        },
+        {
+          "PackageIdentifier": "Microsoft.dotnetRuntime.3-x64"
+        },
+        {
+          "PackageIdentifier": "Microsoft.PowerToys"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VC++2015-2019Redist-x64"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://winget.azureedge.net/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.1.12663"
+}

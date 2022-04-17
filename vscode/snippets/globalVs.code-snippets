@@ -147,7 +147,7 @@
       "date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
       "title: $1",
       "tags: ['$2', '$3', '$4']",
-      "private: true",
+      "isPrivate: true",
       "---"
     ],
     "description": "frontmatter block for frontmattering"

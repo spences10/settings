@@ -11,6 +11,16 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
     "key": "ctrl+k ctrl+e",
     "command": "workbench.view.explorer"
   },
@@ -29,5 +39,30 @@
   {
     "key": "ctrl+k ctrl+b",
     "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+k ctrl+z",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "ctrl+k ctrl+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+k ctrl+q",
+    "command": "workbench.action.toggleTabsVisibility"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.zoomReset"
+  },
+  {
+    "key": "ctrl+alt+s ctrl+alt+c",
+    "command": "workbench.action.toggleScreencastMode"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
   }
 ]
+

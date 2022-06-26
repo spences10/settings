@@ -1,7 +1,9 @@
 {
   "Console Log": {
     "prefix": "clg",
-    "body": ["console.log($1)"],
+    "body": [
+      "console.log($1)"
+    ],
     "description": "console.log"
   },
   "Console Log With Lines": {
@@ -15,12 +17,18 @@
   },
   "Module Exports": {
     "prefix": "me",
-    "body": ["module.exports = {", "  $1", "}"],
+    "body": [
+      "module.exports = {",
+      "  $1",
+      "}"
+    ],
     "description": "module.exports = {}"
   },
   "Const Require Statement": {
     "prefix": "creq",
-    "body": ["const { $2 } = require('$1')"],
+    "body": [
+      "const { $2 } = require('$1')"
+    ],
     "description": "require exported var"
   },
   "Fat arrow": {
@@ -28,6 +36,7 @@
     "body": "=>",
     "description": "insert a fat arrow =>"
   },
+  // react
   "React stateless functional component": {
     "prefix": "sfc",
     "body": [
@@ -87,44 +96,64 @@
     ],
     "description": "insert scaffold for React context"
   },
+  // Styled Components
   "Import styled components": {
     "prefix": "isc",
-    "body": ["import styled from 'styled-components'"],
+    "body": [
+      "import styled from 'styled-components'"
+    ],
     "description": "import styled components"
   },
   "Styled Components Theme Props": {
     "prefix": "tp",
-    "body": ["${({ theme }) => theme.$1};"],
+    "body": [
+      "${({ theme }) => theme.$1};"
+    ],
     "description": "Theme Props"
   },
   "Styled Components Theme Props font size": {
     "prefix": "tpfs",
-    "body": ["${({ theme }) => theme.fontSize.$1};"],
+    "body": [
+      "${({ theme }) => theme.fontSize.$1};"
+    ],
     "description": "Theme Props Font Size"
   },
   "Styled Components Theme Props colour": {
     "prefix": "tpc",
-    "body": ["${({ theme }) => theme.colours.$1};"],
+    "body": [
+      "${({ theme }) => theme.colours.$1};"
+    ],
     "description": "Theme Props colours"
   },
   "Styled Components Theme Props box shadow": {
     "prefix": "tpbs",
-    "body": ["${({ theme }) => theme.boxShadow.$1};"],
+    "body": [
+      "${({ theme }) => theme.boxShadow.$1};"
+    ],
     "description": "Theme Props box shadow"
   },
   "Styled Components Theme Props spacing": {
     "prefix": "tps",
-    "body": ["${({ theme }) => theme.spacing['$1']};"],
+    "body": [
+      "${({ theme }) => theme.spacing['$1']};"
+    ],
     "description": "Theme Props spacing"
   },
   "Styled Components Component": {
     "prefix": "sc",
-    "body": ["const $1 = styled.$2`", "  $3", "`"],
+    "body": [
+      "const $1 = styled.$2`",
+      "  $3",
+      "`"
+    ],
     "description": "New styled component"
   },
   "Marge and Paddy!": {
     "prefix": "marp",
-    "body": ["margin: $1rem;", "padding: $1rem;"],
+    "body": [
+      "margin: $1rem;",
+      "padding: $1rem;"
+    ],
     "description": "margin and padding snippy"
   },
   "Griddyup! Grid yo!": {
@@ -213,6 +242,7 @@
     "body": "JSON.stringify(${1}, null, 2)",
     "description": "JSON.stringify"
   },
+  // NextJS
   "getStaticProps": {
     "prefix": "getStaticProps",
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
@@ -251,5 +281,46 @@
       "}"
     ],
     "description": "(Server-side Rendering): Fetch data on each request."
-  }
+  },
+  // Svelte
+  "Svelte Script Tag": {
+    "prefix": "s-script",
+    "scope": "svelte",
+    "body": [
+      "<script>",
+      "  ${0}",
+      "</script>"
+    ],
+    "description": "insert empty Svelte script tags"
+  },
+  "Svelte Script Tag Lang TS": {
+    "prefix": "s-script-ts",
+    "scope": "svelte",
+    "body": [
+      "<script lang='ts'>",
+      "  ${0}",
+      "</script>"
+    ],
+    "description": "insert empty Svelte script tags with TS lang"
+  },
+  "Svelte Script Tag Context": {
+    "prefix": "s-script-ctx",
+    "scope": "svelte",
+    "body": [
+      "<script context='module'>",
+      "  ${0}",
+      "</script>"
+    ],
+    "description": "insert empty Svelte script tags with context"
+  },
+  "Svelte Script Tag Context Lang TS": {
+    "prefix": "s-script-ctx-ts",
+    "scope": "svelte",
+    "body": [
+      "<script lang='ts' context='module'>",
+      "  ${0}",
+      "</script>"
+    ],
+    "description": "insert empty Svelte script tags with context and TS lang"
+  },
 }

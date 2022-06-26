@@ -43,5 +43,9 @@
   {
     "key": "ctrl+k ctrl+c",
     "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "ctrl+g ctrl+k",
+    "command": "extension.conventionalCommits"
   }
 ]

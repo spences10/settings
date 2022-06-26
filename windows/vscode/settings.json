@@ -4,6 +4,8 @@
   "editor.snippetSuggestions": "top",
   "editor.formatOnSave": true,
   // "editor.formatOnSaveMode": "modifications",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
   "editor.formatOnPaste": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Victor Mono','Dank Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -96,5 +98,4 @@
   "screencastMode.mouseIndicatorSize": 60,
   "screencastMode.onlyKeyboardShortcuts": true,
   "screencastMode.verticalOffset": 5,
-  "cSpell.userWords": ["Cloudinary"]
 }

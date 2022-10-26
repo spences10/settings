@@ -14,7 +14,7 @@
   },
   {
     "key": "ctrl+k ctrl+x",
-    "command": "workbench.extensions.action.showInstalledExtensions"
+    "command": "workbench.extensions.action.showEnabledExtensions"
   },
   {
     "key": "ctrl+k ctrl+b",

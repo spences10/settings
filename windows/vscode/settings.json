@@ -5,7 +5,7 @@
   "editor.formatOnSave": true,
   // "editor.formatOnSaveMode": "modifications",
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
+  "files.autoSaveDelay": 500,
   "editor.formatOnPaste": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Victor Mono','Dank Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -17,12 +17,17 @@
     "source.organizeImports": true
   },
   "editor.suggestSelection": "first",
-  "workbench.activityBar.visible": false,
-  "workbench.sideBar.location": "right",
   "editor.minimap.enabled": false,
   "editor.lineHeight": 35,
+  "editor.inlineSuggest.enabled": true,
+  "editor.accessibilitySupport": "off",
+  // "workbench.experimental.settingsProfiles.enabled": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Night Owl",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "newUntitledFile",
   "showGitMetrics": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -36,9 +41,7 @@
     "javascript": "javascriptreact"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.settings.editor": "json",
   "git.autofetch": true,
-  "workbench.startupEditor": "newUntitledFile",
   "liveServer.settings.donotShowInfoMsg": true,
   "cSpell.language": "en-GB",
   "cSpell.allowCompoundWords": true,
@@ -51,7 +54,8 @@
     "mdx",
     "search-result",
     "shellscript",
-    "vue"
+    "vue",
+    "svelte"
   ],
   "cSpell.enabledLanguageIds": [
     "asciidoc",
@@ -98,4 +102,22 @@
   "screencastMode.mouseIndicatorSize": 60,
   "screencastMode.onlyKeyboardShortcuts": true,
   "screencastMode.verticalOffset": 5,
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "git.ignoreRebaseWarning": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true,
+    "svelte": true
+  },
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "playwright.reuseBrowser": true,
+  "workbench.activityBar.visible": false
 }

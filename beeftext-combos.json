@@ -1,0 +1,91 @@
+{
+    "combos": [
+        {
+            "caseSensitivity": 0,
+            "creationDateTime": "2022-12-08T13:41:26.009",
+            "description": "",
+            "enabled": true,
+            "keyword": ";sk",
+            "matchingMode": 0,
+            "modificationDateTime": "2022-12-08T13:41:45.628",
+            "name": "SvelteKit",
+            "snippet": "SvelteKit",
+            "uuid": "{ae923821-3a30-4e9f-a9ca-067a514084c0}"
+        },
+        {
+            "caseSensitivity": 0,
+            "creationDateTime": "2022-12-08T13:44:31.161",
+            "description": "",
+            "enabled": true,
+            "keyword": ";gh",
+            "matchingMode": 0,
+            "modificationDateTime": "2022-12-08T13:44:47.152",
+            "name": "GitHub",
+            "snippet": "GitHub",
+            "uuid": "{f4454756-f7f2-4ddf-8fea-c3596b7b5a49}"
+        },
+        {
+            "caseSensitivity": 0,
+            "creationDateTime": "2022-12-08T13:44:52.503",
+            "description": "",
+            "enabled": true,
+            "keyword": ";js",
+            "matchingMode": 0,
+            "modificationDateTime": "2022-12-08T13:45:10.487",
+            "name": "JavaScript",
+            "snippet": "JavaScript",
+            "uuid": "{a7b18da2-a6d1-4493-ac7e-c4311053c6e6}"
+        },
+        {
+            "caseSensitivity": 0,
+            "creationDateTime": "2022-12-08T13:45:14.798",
+            "description": "",
+            "enabled": true,
+            "keyword": ";ss",
+            "matchingMode": 0,
+            "modificationDateTime": "2022-12-08T13:45:37.046",
+            "name": "Svelte Society",
+            "snippet": "Svelte Society",
+            "uuid": "{6a7e8ae8-89f3-433e-a6b7-17575737e19d}"
+        },
+        {
+            "caseSensitivity": 0,
+            "creationDateTime": "2022-12-08T13:45:43.286",
+            "description": "",
+            "enabled": true,
+            "keyword": ";gq",
+            "matchingMode": 0,
+            "modificationDateTime": "2022-12-08T13:45:57.438",
+            "name": "GraphQL",
+            "snippet": "GraphQL",
+            "uuid": "{310f994b-e852-4533-b9b0-68f37f53c77c}"
+        },
+        {
+            "caseSensitivity": 0,
+            "creationDateTime": "2022-12-08T13:46:02.998",
+            "description": "",
+            "enabled": true,
+            "keyword": ";sb",
+            "matchingMode": 0,
+            "modificationDateTime": "2022-12-08T13:46:13.846",
+            "name": "Stroyblok",
+            "snippet": "Stroyblok",
+            "uuid": "{1a550014-d913-4509-8b32-492ef86afbf9}"
+        },
+        {
+            "caseSensitivity": 0,
+            "creationDateTime": "2022-12-18T18:00:47.532",
+            "description": "",
+            "enabled": true,
+            "keyword": ";yt",
+            "matchingMode": 0,
+            "modificationDateTime": "2022-12-18T18:01:03.627",
+            "name": "YouTube",
+            "snippet": "YouTube",
+            "uuid": "{d1b9c3a8-c9bd-4078-9fe1-41a71f743483}"
+        }
+    ],
+    "fileFormatVersion": 10,
+    "groups": [
+    ]
+}

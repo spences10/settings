@@ -1,9 +1,7 @@
 {
   "Console Log": {
     "prefix": "clg",
-    "body": [
-      "console.log($1)"
-    ],
+    "body": ["console.log($1)"],
     "description": "console.log"
   },
   "Console Log With Lines": {
@@ -17,18 +15,12 @@
   },
   "Module Exports": {
     "prefix": "me",
-    "body": [
-      "module.exports = {",
-      "  $1",
-      "}"
-    ],
+    "body": ["module.exports = {", "  $1", "}"],
     "description": "module.exports = {}"
   },
   "Const Require Statement": {
     "prefix": "creq",
-    "body": [
-      "const { $2 } = require('$1')"
-    ],
+    "body": ["const { $2 } = require('$1')"],
     "description": "require exported var"
   },
   "Fat arrow": {
@@ -36,139 +28,7 @@
     "body": "=>",
     "description": "insert a fat arrow =>"
   },
-  // react
-  "React stateless functional component": {
-    "prefix": "sfc",
-    "body": [
-      "import React from 'react'",
-      "import PropTypes from 'prop-types'",
-      "",
-      "const $1 = (props) => {",
-      "  return (",
-      "    <React.Fragment>",
-      "      <p>jsx goes here</p>",
-      "    </React.Fragment>",
-      "  )",
-      "}",
-      "",
-      "$1.propTypes = {}",
-      "",
-      "export default $1"
-    ],
-    "description": "insert starter for stateless functional component"
-  },
-  "React context component": {
-    "prefix": "ctx",
-    "body": [
-      "import React from 'react'",
-      "// Context is made up of two things",
-      "// Provider - Single as close to top level as possible",
-      "// Consumer - Multiple have multiple consumers",
-      "export const $1Context = React.createContext()",
-      "",
-      "export class $1Provider extends React.Component {",
-      "  state = {",
-      "    item1: 1,",
-      "    item2: 2",
-      "  }",
-      "",
-      "  // add function here",
-      "  functionHere = () => {",
-      "    this.setState({",
-      "      item1: 2,",
-      "      item2: 3",
-      "    })",
-      "  }",
-      "  render() {",
-      "    return (",
-      "      <$1Context.Provider",
-      "        value={{",
-      "          ...this.state,",
-      "          functionHere: this.functionHere",
-      "        }}",
-      "      >",
-      "        {this.props.children}",
-      "      </$1Context.Provider>",
-      "    )",
-      "  }",
-      "}",
-      ""
-    ],
-    "description": "insert scaffold for React context"
-  },
-  // Styled Components
-  "Import styled components": {
-    "prefix": "isc",
-    "body": [
-      "import styled from 'styled-components'"
-    ],
-    "description": "import styled components"
-  },
-  "Styled Components Theme Props": {
-    "prefix": "tp",
-    "body": [
-      "${({ theme }) => theme.$1};"
-    ],
-    "description": "Theme Props"
-  },
-  "Styled Components Theme Props font size": {
-    "prefix": "tpfs",
-    "body": [
-      "${({ theme }) => theme.fontSize.$1};"
-    ],
-    "description": "Theme Props Font Size"
-  },
-  "Styled Components Theme Props colour": {
-    "prefix": "tpc",
-    "body": [
-      "${({ theme }) => theme.colours.$1};"
-    ],
-    "description": "Theme Props colours"
-  },
-  "Styled Components Theme Props box shadow": {
-    "prefix": "tpbs",
-    "body": [
-      "${({ theme }) => theme.boxShadow.$1};"
-    ],
-    "description": "Theme Props box shadow"
-  },
-  "Styled Components Theme Props spacing": {
-    "prefix": "tps",
-    "body": [
-      "${({ theme }) => theme.spacing['$1']};"
-    ],
-    "description": "Theme Props spacing"
-  },
-  "Styled Components Component": {
-    "prefix": "sc",
-    "body": [
-      "const $1 = styled.$2`",
-      "  $3",
-      "`"
-    ],
-    "description": "New styled component"
-  },
-  "Marge and Paddy!": {
-    "prefix": "marp",
-    "body": [
-      "margin: $1rem;",
-      "padding: $1rem;"
-    ],
-    "description": "margin and padding snippy"
-  },
-  "Griddyup! Grid yo!": {
-    "prefix": "grid",
-    "body": [
-      "display: grid;",
-      "grid-template-columns: repeat(12, 1fr);",
-      "grid-template-rows: auto;",
-      "grid-template-areas:",
-      "'. . . h h h h h h . . .'",
-      "'. . . m m m m m m . . .'",
-      "'. . . f f f f f f . . .';"
-    ],
-    "description": "margin and padding snippy"
-  },
+  // markdown
   "frontmatterBlock": {
     "prefix": "fmb",
     "body": [
@@ -185,15 +45,6 @@
     "prefix": "exc",
     "body": "export const $1",
     "description": "export const"
-  },
-  "Use State": {
-    "prefix": "use",
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
-    "body": [
-      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);",
-      "$0"
-    ],
-    "description": "(EXPERIMENTAL) React: Use State. See https://reactjs.org/hooks"
   },
   "Export const": {
     "prefix": "ecf",
@@ -212,12 +63,6 @@
     "scope": "javascript,javascriptreact,typescript,typescriptreact,svelte",
     "body": "() => {}",
     "description": "Anon function"
-  },
-  "import React": {
-    "prefix": "ir",
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
-    "body": "import React from 'react'",
-    "description": "import React statement"
   },
   "import {} from": {
     "prefix": "imfr",
@@ -242,85 +87,17 @@
     "body": "JSON.stringify(${1}, null, 2)",
     "description": "JSON.stringify"
   },
-  // NextJS
-  "getStaticProps": {
-    "prefix": "getStaticProps",
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
-    "body": [
-      "export async function getStaticProps(context) {",
-      "  return {",
-      "    props: {}, // will be passed to the page component as props",
-      "  }",
-      "}"
-    ],
-    "description": "(Static Generation): Fetch data at build time."
-  },
-  "getStaticPaths": {
-    "prefix": "getStaticPaths",
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
-    "body": [
-      "export async function getStaticPaths() {",
-      "  return {",
-      "    paths: [",
-      "      { params: { ... } } // See the paths section ",
-      "    ],",
-      "    fallback: true or false // See the fallback section",
-      "  };",
-      "}"
-    ],
-    "description": "(Static Generation): Specify dynamic routes to pre-render pages based on data."
-  },
-  "getServerSideProps": {
-    "prefix": "getServerSideProps",
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
-    "body": [
-      "export async function getServerSideProps(context) {",
-      "  return {",
-      "    props: {}, // will be passed to the page component as props",
-      "  }",
-      "}"
-    ],
-    "description": "(Server-side Rendering): Fetch data on each request."
-  },
   // Svelte
   "Svelte Script Tag": {
     "prefix": "s-script",
     "scope": "svelte",
-    "body": [
-      "<script>",
-      "  ${0}",
-      "</script>"
-    ],
+    "body": ["<script>", "  ${0}", "</script>"],
     "description": "insert empty Svelte script tags"
   },
   "Svelte Script Tag Lang TS": {
     "prefix": "s-script-ts",
     "scope": "svelte",
-    "body": [
-      "<script lang='ts'>",
-      "  ${0}",
-      "</script>"
-    ],
+    "body": ["<script lang='ts'>", "  ${0}", "</script>"],
     "description": "insert empty Svelte script tags with TS lang"
-  },
-  "Svelte Script Tag Context": {
-    "prefix": "s-script-ctx",
-    "scope": "svelte",
-    "body": [
-      "<script context='module'>",
-      "  ${0}",
-      "</script>"
-    ],
-    "description": "insert empty Svelte script tags with context"
-  },
-  "Svelte Script Tag Context Lang TS": {
-    "prefix": "s-script-ctx-ts",
-    "scope": "svelte",
-    "body": [
-      "<script lang='ts' context='module'>",
-      "  ${0}",
-      "</script>"
-    ],
-    "description": "insert empty Svelte script tags with context and TS lang"
-  },
+  }
 }

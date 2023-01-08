@@ -28,21 +28,16 @@
   "workbench.colorTheme": "Night Owl",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
-  "showGitMetrics": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.ignoreRebaseWarning": true,
   "scm.defaultViewMode": "tree",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "diffEditor.ignoreTrimWhitespace": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "git.autofetch": true,
-  "liveServer.settings.donotShowInfoMsg": true,
   "cSpell.language": "en-GB",
   "cSpell.allowCompoundWords": true,
   "cSpell.enableFiletypes": [
@@ -109,7 +104,6 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "git.ignoreRebaseWarning": true,
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
@@ -119,5 +113,7 @@
   },
   "svelte.plugin.svelte.note-new-transformation": false,
   "playwright.reuseBrowser": true,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": 3,
+  "workbench.statusBar.visible": false
 }

@@ -111,9 +111,12 @@
     "markdown": true,
     "svelte": true
   },
-  "svelte.plugin.svelte.note-new-transformation": false,
   "playwright.reuseBrowser": true,
   "workbench.activityBar.visible": false,
-  "window.zoomLevel": 3,
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  // "window.commandCenter": false,
+  // "workbench.editor.showTabs": false,
+  // "window.menuBarVisibility": "compact",
+  // "workbench.layoutControl.enabled": false,
+  "window.zoomLevel": 2
 }

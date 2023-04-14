@@ -99,5 +99,43 @@
     "scope": "svelte",
     "body": ["<script lang='ts'>", "  ${0}", "</script>"],
     "description": "insert empty Svelte script tags with TS lang"
+  },
+  "Svelte if": {
+    "prefix": "s-if",
+    "scope": "svelte",
+    "body": [
+      "{#if ${1:condition}}",
+      "  $0",
+      "{:else}",
+      "  $0",
+      "{/if}"
+    ],
+    "description": "Svelte if/else block with TS lang"
+  },
+  "Svelte each": {
+    "prefix": "s-each",
+    "scope": "svelte",
+    "body": [
+      "{#each ${1:array} as ${2:item}${3:, ${4:index}}}",
+      "  $0",
+      "{:else}",
+      "  $0",
+      "{/each}"
+    ],
+    "description": "Svelte each/else block with TS lang"
+  },
+  "Svelte await": {
+    "prefix": "s-await",
+    "scope": "svelte",
+    "body": [
+      "{#await ${1:promise}}",
+      "  $0",
+      "{:then ${2:value}}",
+      "  $0",
+      "{:catch ${3:error}}",
+      "  $0",
+      "{/await}"
+    ],
+    "description": "Svelte await/then/catch block with TS lang"
   }
 }

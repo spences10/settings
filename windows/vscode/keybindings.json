@@ -47,5 +47,9 @@
   {
     "key": "ctrl+g ctrl+k",
     "command": "extension.conventionalCommits"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "git.checkout"
   }
 ]

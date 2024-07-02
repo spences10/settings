@@ -51,5 +51,9 @@
   {
     "key": "ctrl+shift+g",
     "command": "git.checkout"
+  },
+  {
+    "key": "ctrl+g ctrl+p",
+    "command": "git.pull"
   }
 ]

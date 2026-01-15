@@ -1,26 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
   {
-    "key": "shift+alt+down",
-    "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+up",
-    "command": "editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+alt+down",
-    "command": "editor.action.insertCursorBelow",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+alt+up",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+k ctrl+e",
     "command": "workbench.view.explorer"
   },
@@ -34,7 +14,7 @@
   },
   {
     "key": "ctrl+k ctrl+x",
-    "command": "workbench.extensions.action.showInstalledExtensions"
+    "command": "workbench.extensions.action.showEnabledExtensions"
   },
   {
     "key": "ctrl+k ctrl+b",
@@ -63,6 +43,17 @@
   {
     "key": "ctrl+k ctrl+c",
     "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "ctrl+g ctrl+k",
+    "command": "extension.conventionalCommits"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "git.checkout"
+  },
+  {
+    "key": "ctrl+g ctrl+p",
+    "command": "git.pull"
   }
 ]
-
